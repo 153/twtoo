@@ -2,7 +2,7 @@
 import os, json, shutil, time
 import twint
 from mastodon import Mastodon
-import * from config
+from config import *
 
 delim = chr(31)
 mastodon = Mastodon(
