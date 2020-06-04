@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 from mastodon import Mastodon
-import * from config
+from config import *
 
 def register():
     Mastodon.create_app(
