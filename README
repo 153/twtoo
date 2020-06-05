@@ -2,10 +2,25 @@ twtoo or "twitter to tooter" is an app that brings Tweets to a Mastodon account.
 
 How to install:
 1. Install "twint" and "Mastodon.py"
-2. Modify "config.py" to include the twitter account you want to mirror, the URL of your mastodon instance, and your mastodon username and password.
+2. Modify "config.py" to include the twitter account you want to mirror, 
+   the URL of your mastodon instance, and your mastodon email address 
+   (aka login username) and password.
 3. Run "register.py" in python3 to link this app and your user.
-4. Run "loop.py" to start checking the target twitter account every 20 seconds.
+4. Run "loop.py" to start checking the target twitter account every
+   20 seconds.
+
+Next release features (v1.0):
+- embed images/video
+- prefix with "quote_url" if quote-tweeting
+- affix conversation members at end of message, if not explicitly 
+  mentioned
+- append @twitter.com to all usernames
+- conclude with newlines, link to original tweet
+
+Planned future features (v2.0):
+- many twitter feeds to one mastodon users (eg 3 users -> 1 user)
+- plural twitter feeds to plural mastodon users (eg 1->1, 1->1, etc)
 
 Mastodon.py and twint copyright their respective owners
 
-All other content is unlicensed and free for any use. 
+All other content is unlicensed and is to be used as you see fit.
